@@ -40,8 +40,13 @@ You can quickly create new posts since there's no need for an admin panel.
     APP_NAME="Your Blog's Name" 
     ```
 
+5. Generate a new Application Key:
 
-5. Run your build process with:
+    ```bash
+    php artisan key:generate
+    ```
+
+6. Run your build process with:
 
     ```bash
     npm run dev.
