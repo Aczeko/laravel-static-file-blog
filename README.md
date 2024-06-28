@@ -1,6 +1,4 @@
-
-# Laravel Static File Blog
-
+![Larvel Static File Blog](https://banners.beyondco.de/Laravel%20Static%20File%20Blog.png?theme=dark&packageManager=&packageName=&pattern=xEquals&style=style_1&description=Static+File+Blog+driven+by+Markdown+Files&md=1&showWatermark=0&fontSize=125px&images=https%3A%2F%2Flaravel.com%2Fimg%2Flogomark.min.svg)
 
 ## Table of Contents
 - [Overview](#overview)
