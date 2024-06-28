@@ -1,66 +1,86 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# Laravel Static File Blog
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Table of Contents
+- [Overview](#overview)
+- [Installation](#installation)
+- [Examples Markdown File](#-examples-markdown-file)
+- [Useful Links](#-useful-links)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🔎 Overview
+This is a static file Blog written in Laravel. It's driven by markdown files (no database required).
+The blog will feature things like syntax highlighting, post tagging and pagination. Plus, it'll render in record time.
 
-## Learning Laravel
+You can quickly create new posts since there's no need for an admin panel.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## ⚙️ Installation
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+1. Clone this repository:
+    ```bash
+    git clone git@github.com:Aczeko/laravel-static-file-blog.git
+    ```
+2. Navigate into the directory:
+    ```bash
+    cd yourproject
+    ````
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+3. Install dependencies:
+    ```bash
+    npm install
+    composer install 
+    ```
 
-## Laravel Sponsors
+4. Duplicate the .env.example file and save it as .env
+    - here you can give your blog a name at APP_NAME=""
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+    ```
+    APP_NAME="Your Blog's Name" 
+    ```
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+5. Run your build process with:
 
-## Contributing
+    ```bash
+    npm run dev.
+    ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 📋 Examples Markdown File
+Now all your blog needs is a blog post, so here is how you can make them and where you should save them:
 
-## Code of Conduct
+1. Open your project and go to `storage/app/posts/`. You can save all your blog posts in here.
+2. The Markdown files have to follow this name convention:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+    ```
+    yyyy-mm-dd.blog-post-name.md
+    
+    Example:
+    2024-05-30.markdown-introduction.md
+    ```
+3. All your markdown files have to include a title, an author, a teaser and tags at the beginning of each file and it should be put into the structure shown below.
 
-## Security Vulnerabilities
+   You can copy this, change it to match your blog post and use it for your Markdown files:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+    ```
+    ---
 
-## License
+    title: Blog Post Name
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+    author: Your Name
+
+    teaser: This is a simple teaser for your blog post. It should give a brief overview and encourage readers to click through and read the full post.
+
+    tags: [Tag1, Tag2]
+
+    ---
+    
+    ## Put in your own Markdown syntax here...
+    ```
+
+
+## 🔗 Useful Links
+- [Video-Tutorial for this static file blog](https://codecourse.com/courses/build-a-static-file-blog-with-laravel)
+- [Installing Tailwind CSS for Laravel](https://tailwindcss.com/docs/guides/laravel)
+- [Tailwinds Typography Plugin](https://github.com/tailwindlabs/tailwindcss-typography)
