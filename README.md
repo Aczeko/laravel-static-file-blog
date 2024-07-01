@@ -2,17 +2,22 @@
 
 ## Table of Contents
 - [Overview](#overview)
-- [Installation](#⚙️-installation)
+- [Installation](#installation)
 - [Example Markdown File](#example-markdown-file)
 - [Useful Links](#useful-links)
 
 ---
-
+<section id="overview">
+    
 ## 🔎 Overview
 This is a static file Blog written in Laravel. It's driven by markdown files (no database required).
 The blog will feature things like syntax highlighting, post tagging and pagination. Plus, it'll render in record time.
 
 You can quickly create new posts since there's no need for an admin panel.
+
+</section>
+
+<section id="installation">
 
 ## ⚙️ Installation
 
@@ -49,6 +54,10 @@ You can quickly create new posts since there's no need for an admin panel.
     ```bash
     npm run dev
     ```
+    
+</section>
+
+<section id="example-markdown-file">
 
 ## 📋 Example Markdown File
 Now all your blog needs is a blog post, so here is how you can make them and where you should save them:
@@ -82,8 +91,14 @@ Now all your blog needs is a blog post, so here is how you can make them and whe
     ## Put in your own Markdown syntax here...
     ```
 
+</section>
+
+<section id="useful-links">
 
 ## 🔗 Useful Links
 - [Video-Tutorial for this static file blog](https://codecourse.com/courses/build-a-static-file-blog-with-laravel)
 - [Installing Tailwind CSS for Laravel](https://tailwindcss.com/docs/guides/laravel)
 - [Tailwinds Typography Plugin](https://github.com/tailwindlabs/tailwindcss-typography)
+
+</section>
+
