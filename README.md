@@ -3,8 +3,8 @@
 ## Table of Contents
 - [Overview](#overview)
 - [Installation](#installation)
-- [Examples Markdown File](#-examples-markdown-file)
-- [Useful Links](#-useful-links)
+- [Example Markdown File](#example-markdown-file)
+- [Useful Links](#useful-links)
 
 ---
 
@@ -50,7 +50,7 @@ You can quickly create new posts since there's no need for an admin panel.
     npm run dev
     ```
 
-## 📋 Examples Markdown File
+## 📋 Example Markdown File
 Now all your blog needs is a blog post, so here is how you can make them and where you should save them:
 
 1. Open your project and go to `storage/app/posts/`. You can save all your blog posts in here.
