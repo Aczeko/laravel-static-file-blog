@@ -47,7 +47,7 @@ You can quickly create new posts since there's no need for an admin panel.
 6. Run your build process with:
 
     ```bash
-    npm run dev.
+    npm run dev
     ```
 
 ## 📋 Examples Markdown File
